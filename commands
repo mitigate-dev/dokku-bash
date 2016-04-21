@@ -13,6 +13,9 @@ help_content
     help_content_func
     ;;
 
+  bash)
+    /usr/bin/env bash "${@:2}"
+
   *)
     exit $DOKKU_NOT_IMPLEMENTED_EXIT
     ;;
