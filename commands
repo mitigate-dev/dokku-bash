@@ -3,7 +3,14 @@ set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 
 case "$1" in
   help | bash:help)
-    cat "    bash, Spawn bash shell"
+    help_content_func () {
+      declare desc="return help_content string"
+      cat<<help_content
+    bash, Spawn bash shell
+help_content
+    }
+
+    help_content_func
     ;;
 
   *)
