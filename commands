@@ -15,6 +15,7 @@ help_content
 
   bash)
     /usr/bin/env bash "${@:2}"
+    ;;
 
   *)
     exit $DOKKU_NOT_IMPLEMENTED_EXIT
