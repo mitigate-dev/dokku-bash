@@ -20,3 +20,9 @@ bash    Spawn bash shell
 me@localhost $ ssh -t dokku@<host> -- bash
 dokku@<host> $
 ```
+
+scp commands also work:
+
+```shell
+scp dokku@<host>:/tmp/test.txt .
+```

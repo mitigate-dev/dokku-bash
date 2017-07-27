@@ -17,6 +17,10 @@ help_content
     /usr/bin/env bash "${@:2}"
     ;;
 
+  scp)
+    eval $@
+    ;;
+
   *)
     exit $DOKKU_NOT_IMPLEMENTED_EXIT
     ;;
