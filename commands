@@ -17,7 +17,7 @@ help_content
     /usr/bin/env bash "${@:2}"
     ;;
 
-  scp)
+  scp | rsync)
     eval $@
     ;;
 

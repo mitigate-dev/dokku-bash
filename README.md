@@ -21,8 +21,9 @@ me@localhost $ ssh -t dokku@<host> -- bash
 dokku@<host> $
 ```
 
-scp commands also work:
+`scp` and `rsync` works also:
 
 ```shell
 scp dokku@<host>:/tmp/test.txt .
+rsync dokku@<host>:/tmp/test.txt .
 ```
